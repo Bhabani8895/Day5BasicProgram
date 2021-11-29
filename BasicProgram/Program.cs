@@ -10,6 +10,7 @@ while (choice != 'n')
     Console.WriteLine("\t(((((3.Prime Factors)))))");
     Console.WriteLine("\t(((((4.Harmonic Numb)))))");
     Console.WriteLine("\t(((((5.Even Odd)))))");
+    Console.WriteLine("\t(((((6.Greatest among 3)))))");
     int n = Convert.ToInt32(Console.ReadLine());
     switch (n)
     {
@@ -32,6 +33,10 @@ while (choice != 'n')
         case 5:
             EvenOdd eo = new EvenOdd();
             eo.EvenOrOdd();
+            break;
+        case 6:
+            ThreeNumComparison TNC = new ThreeNumComparison();
+            TNC.GreatestNum();
             break;
     }
 }
