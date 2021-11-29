@@ -11,6 +11,7 @@ while (choice != 'n')
     Console.WriteLine("\t(((((4.Harmonic Numb)))))");
     Console.WriteLine("\t(((((5.Even Odd)))))");
     Console.WriteLine("\t(((((6.Greatest among 3)))))");
+    Console.WriteLine("\t(((((7.Power of Two)))))");
     int n = Convert.ToInt32(Console.ReadLine());
     switch (n)
     {
@@ -37,6 +38,10 @@ while (choice != 'n')
         case 6:
             ThreeNumComparison TNC = new ThreeNumComparison();
             TNC.GreatestNum();
+            break;
+        case 7:
+            PowerOfTwo pt = new PowerOfTwo();
+            pt.TwoPower();
             break;
     }
 }
