@@ -8,6 +8,7 @@ while (choice != 'n')
     Console.WriteLine("\t(((((1.Flip Coin )))))))))");
     Console.WriteLine("\t(((((2.Leap Year)))))");
     Console.WriteLine("\t(((((3.Prime Factors)))))");
+    Console.WriteLine("\t(((((4.Harmonic Numb)))))");
     int n = Convert.ToInt32(Console.ReadLine());
     switch (n)
     {
@@ -22,6 +23,10 @@ while (choice != 'n')
         case 3:
             PrimeFactor obj = new PrimeFactor();
             obj.Prime();
+            break;
+        case 4:
+            HarmonicNumber hn = new HarmonicNumber();
+            hn.Harmonic();
             break;
     }
 }
