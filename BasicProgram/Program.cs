@@ -12,6 +12,7 @@ while (choice != 'n')
     Console.WriteLine("\t(((((5.Even Odd)))))");
     Console.WriteLine("\t(((((6.Greatest among 3)))))");
     Console.WriteLine("\t(((((7.Power of Two)))))");
+    Console.WriteLine("\t(((((8.Qoutient and Rem)))))");
     int n = Convert.ToInt32(Console.ReadLine());
     switch (n)
     {
@@ -42,6 +43,14 @@ while (choice != 'n')
         case 7:
             PowerOfTwo pt = new PowerOfTwo();
             pt.TwoPower();
+            break;
+        case 8:
+            QuotientAndRemainder qr1 = new QuotientAndRemainder();
+            qr1.QAndR();
+            break;
+        case 9:
+            SwappingNumbers sw = new SwappingNumbers();
+            sw.swap();
             break;
     }
 }
