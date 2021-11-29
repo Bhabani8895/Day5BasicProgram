@@ -9,6 +9,7 @@ while (choice != 'n')
     Console.WriteLine("\t(((((2.Leap Year)))))");
     Console.WriteLine("\t(((((3.Prime Factors)))))");
     Console.WriteLine("\t(((((4.Harmonic Numb)))))");
+    Console.WriteLine("\t(((((5.Even Odd)))))");
     int n = Convert.ToInt32(Console.ReadLine());
     switch (n)
     {
@@ -27,6 +28,10 @@ while (choice != 'n')
         case 4:
             HarmonicNumber hn = new HarmonicNumber();
             hn.Harmonic();
+            break;
+        case 5:
+            EvenOdd eo = new EvenOdd();
+            eo.EvenOrOdd();
             break;
     }
 }
