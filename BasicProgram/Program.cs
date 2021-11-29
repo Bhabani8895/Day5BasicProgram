@@ -13,6 +13,8 @@ while (choice != 'n')
     Console.WriteLine("\t(((((6.Greatest among 3)))))");
     Console.WriteLine("\t(((((7.Power of Two)))))");
     Console.WriteLine("\t(((((8.Qoutient and Rem)))))");
+    Console.WriteLine("\t(((((9.Swapping)))))");
+    Console.WriteLine("\t(((((10.Vowel Or Consonant)))))");
     int n = Convert.ToInt32(Console.ReadLine());
     switch (n)
     {
@@ -52,5 +54,11 @@ while (choice != 'n')
             SwappingNumbers sw = new SwappingNumbers();
             sw.swap();
             break;
+        case 10:
+            VowelOrConsonent VC = new VowelOrConsonent();
+            VC.VowelOrCons();
+            break;
     }
 }
+Console.WriteLine("\tEnter any key to run and n to End the program!!!");
+choice = Convert.ToChar(Console.ReadLine());
